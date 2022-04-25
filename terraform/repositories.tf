@@ -26,10 +26,3 @@ resource "github_issue_label" "general" {
   description = each.value.description
   color       = each.value.color
 }
-
-resource "github_branch_default" "general" {
-  for_each = { for row in data.github_repositories.available.names : row => row }
-
-  repository = each.value
-  branch     = "master"
-}

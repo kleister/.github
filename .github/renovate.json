@@ -7,8 +7,8 @@
     ],
     "packageRules": [
         {
-            "description": "Semantic commits for major updates",
-            "groupName": "major updates",
+            "description": "Semantic commits for major versions",
+            "groupName": "major versions",
             "matchDatasources": [
                 "github-releases",
                 "terraform-provider"
@@ -21,8 +21,8 @@
             "automerge": true
         },
         {
-            "description": "Semantic commits for minor updates",
-            "groupName": "minor updates",
+            "description": "Semantic commits for minor versions",
+            "groupName": "minor versions",
             "matchDatasources": [
                 "github-releases",
                 "terraform-provider"
@@ -35,8 +35,8 @@
             "automerge": true
         },
         {
-            "description": "Semantic commits for patch updates",
-            "groupName": "patch updates",
+            "description": "Semantic commits for patch versions",
+            "groupName": "patch versions",
             "matchDatasources": [
                 "github-releases",
                 "terraform-provider"

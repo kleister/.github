@@ -10,7 +10,8 @@ TBD
 
 ## Security
 
-If you find a security issue please contact kleister@webhippie.de first.
+If you find a security issue please contact
+[kleister@webhippie.de](mailto:kleister@webhippie.de) first.
 
 ## Contributing
 

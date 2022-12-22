@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [ -L $0 ]; then
-    ROOT=$(cd $(dirname $(readlink -e $0))/../terraform; pwd)
+if [ -L "$0" ]; then
+    ROOT=$(cd "$(dirname "$(readlink -e "$0")")/../terraform" || exit; pwd)
 else
-    ROOT=$(cd $(dirname $0)/../terraform; pwd)
+    ROOT=$(cd "$(dirname "$0")/../terraform" || exit; pwd)
 fi
 
 if ! which terraform >/dev/null; then
@@ -11,4 +11,4 @@ if ! which terraform >/dev/null; then
     exit 1
 fi
 
-terraform -chdir=${ROOT} "$@"
+terraform -chdir="${ROOT}" "$@"

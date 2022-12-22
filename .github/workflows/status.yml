@@ -1,0 +1,42 @@
+---
+name: status
+
+"on":
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  "30 5 * * *"
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
+
+      - name: Setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+          bundler-cache: true
+
+      - name: Execute script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bundle exec scripts/generate-status
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          author_email: github@kleister.eu
+          add: STATUS.md
+          message: "docs: automated status update"
+          push: true
+          commit: --signoff
+
+...

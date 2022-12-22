@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+require "erb"
+require "octokit"
+
+Octokit.configure do |c|
+  c.auto_paginate = true
+end
+
+Octokit::Client.new(
+  access_token: ENV["GITHUB_TOKEN"]
+).tap do |client|
+  @repos = client.org_repos("kleister").map(&:name).sort.reject do |row|
+    [".github"].include? row
+  end
+
+  File.write(
+    File.expand_path(
+      "../../STATUS.md",
+      __FILE__
+    ),
+    ERB.new(
+      File.read(
+        File.expand_path(
+          "../../templates/status.erb",
+           __FILE__
+        )
+      ),
+      nil,
+      "-"
+    ).result
+  )
+end

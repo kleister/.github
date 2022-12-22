@@ -1,0 +1,7 @@
+# Status
+
+| Repo | General |
+| --- | --- | --- | --- |
+<%- @repos.each do |row| -%>
+| [<%= row %>](https://github.com/kleister/<%= row %>) | [![General Build](https://github.com/kleister/<%= row %>/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/<%= row %>/actions/workflows/general.yml) |
+<%- end -%>

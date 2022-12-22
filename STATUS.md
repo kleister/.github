@@ -1,7 +1,7 @@
 # Status
 
 | Repo | General |
-| --- | --- | --- | --- |
+| --- | --- |
 | [go-forge](https://github.com/kleister/go-forge) | [![General Build](https://github.com/kleister/go-forge/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-forge/actions/workflows/general.yml) |
 | [go-mcupdater](https://github.com/kleister/go-mcupdater) | [![General Build](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml) |
 | [go-minecraft](https://github.com/kleister/go-minecraft) | [![General Build](https://github.com/kleister/go-minecraft/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-minecraft/actions/workflows/general.yml) |

@@ -9,9 +9,9 @@ end
 Octokit::Client.new(
   access_token: ENV["GITHUB_TOKEN"]
 ).tap do |client|
-  @repos = client.org_repos("kleister").map(&:name).sort.reject do |row|
-    [".github"].include? row
-  end
+  @repos = client.org_repos("kleister").map(&:name).sort.select do |row|
+    row.start_with? "kleister-"
+  end.append("homebrew-kleister")
 
   File.write(
     File.expand_path(

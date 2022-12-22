@@ -11,7 +11,8 @@
       "groupName": "major versions",
       "matchDatasources": [
         "github-releases",
-        "terraform-provider"
+        "terraform-provider",
+        "rubygems"
       ],
       "matchUpdateTypes": [
         "major"
@@ -25,7 +26,8 @@
       "groupName": "minor versions",
       "matchDatasources": [
         "github-releases",
-        "terraform-provider"
+        "terraform-provider",
+        "rubygems"
       ],
       "matchUpdateTypes": [
         "minor"
@@ -39,7 +41,8 @@
       "groupName": "patch versions",
       "matchDatasources": [
         "github-releases",
-        "terraform-provider"
+        "terraform-provider",
+        "rubygems"
       ],
       "matchUpdateTypes": [
         "patch"

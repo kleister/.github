@@ -1,32 +1,32 @@
 #!/usr/bin/env ruby
-require "erb"
-require "octokit"
+# frozen_string_literal: true
+
+require 'erb'
+require 'octokit'
 
 Octokit.configure do |c|
   c.auto_paginate = true
 end
 
 Octokit::Client.new(
-  access_token: ENV["GITHUB_TOKEN"]
+  access_token: ENV['GITHUB_TOKEN']
 ).tap do |client|
-  @repos = client.org_repos("kleister").map(&:name).sort.select do |row|
-    row.start_with? "kleister-"
-  end.append("homebrew-kleister")
+  @repos = client.org_repos('kleister').map(&:name).sort.select do |row|
+    row.start_with? 'kleister-'
+  end.append('homebrew-kleister')
 
   File.write(
     File.expand_path(
-      "../../STATUS.md",
-      __FILE__
+      '../STATUS.md',
+      __dir__
     ),
     ERB.new(
       File.read(
         File.expand_path(
-          "../../templates/status.erb",
-           __FILE__
+          '../templates/status.erb',
+          __dir__
         )
-      ),
-      nil,
-      "-"
+      ), trim_mode: '-'
     ).result
   )
 end

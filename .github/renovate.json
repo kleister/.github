@@ -9,11 +9,6 @@
     {
       "description": "Semantic commits for major versions",
       "groupName": "major versions",
-      "matchDatasources": [
-        "github-releases",
-        "terraform-provider",
-        "rubygems"
-      ],
       "matchUpdateTypes": [
         "major"
       ],
@@ -24,11 +19,6 @@
     {
       "description": "Semantic commits for minor versions",
       "groupName": "minor versions",
-      "matchDatasources": [
-        "github-releases",
-        "terraform-provider",
-        "rubygems"
-      ],
       "matchUpdateTypes": [
         "minor"
       ],
@@ -39,11 +29,6 @@
     {
       "description": "Semantic commits for patch versions",
       "groupName": "patch versions",
-      "matchDatasources": [
-        "github-releases",
-        "terraform-provider",
-        "rubygems"
-      ],
       "matchUpdateTypes": [
         "patch"
       ],

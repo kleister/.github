@@ -1,8 +1,8 @@
 ---
 repository:
   name: .github
-  description: "Gopad: GitHub"
-  homepage: https://gopad.eu
+  description: "Kleister: GitHub"
+  homepage: https://kleister.eu
   topics: kleister, minecraft, github, scripting, profile
 
   private: false

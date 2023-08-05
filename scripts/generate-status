@@ -13,6 +13,8 @@ Octokit::Client.new(
 ).tap do |client|
   @repos = client.org_repos('kleister').sort_by(&:name).select do |row|
     row.name.start_with? 'kleister-' or row.name.end_with? '-kleister'
+  end.reject do |row|
+    row.archived?
   end.map do |row|
     workflows = client.contents(row.full_name, path: '.github/workflows', query: { ref: 'master' }).map do |w|
       w.name.delete_suffix('.yml')

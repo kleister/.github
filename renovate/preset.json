@@ -47,8 +47,8 @@
         "golang.org/x/net",
         "github.com/kleister/kleister-go"
       ],
-      "semanticCommitType": "deps",
-      "semanticCommitScope": "patch",
+      "semanticCommitType": "patch",
+      "semanticCommitScope": "deps",
       "automerge": true
     },
     {

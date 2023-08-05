@@ -1,7 +1,7 @@
 # Status
+<%- @repos.each do |r| -%><%- unless r[:workflows].empty? -%>
 
-| Repo | General |
-| --- | --- |
-<%- @repos.each do |row| -%>
-| [<%= row %>](https://github.com/kleister/<%= row %>) | [![General Build](https://github.com/kleister/<%= row %>/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/<%= row %>/actions/workflows/general.yml) |
-<%- end -%>
+## <%= r[:name] %>
+<%- r[:workflows].each do |w| -%>[![<%= w %> build](https://github.com/dockhippie/<%= r[:name] %>/actions/workflows/<%= w %>.yml/badge.svg)](https://github.com/dockhippie/<%= r[:name] %>/actions/workflows/<%= w %>.yml)<%= " " unless r[:workflows].last == w %><%- end -%>
+
+<%- end -%><%- end -%>

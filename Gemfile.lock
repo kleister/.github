@@ -1,13 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.4)
+    addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     faraday (2.7.10)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
+    faraday-retry (2.2.0)
+      faraday (~> 2.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
     octokit (7.0.0)
@@ -44,12 +46,13 @@ GEM
     unicode-display_width (2.4.2)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
+  faraday-retry (~> 2.2)
   octokit (~> 7.0)
   rake (~> 13.0)
   rubocop (~> 1.28)
 
 BUNDLED WITH
-   2.1.4
+   2.3.26

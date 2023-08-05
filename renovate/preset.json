@@ -45,7 +45,7 @@
       "matchPackageNames": [
         "golang.org/x/crypto",
         "golang.org/x/net",
-        "github.com/gopad/gopad-go"
+        "github.com/kleister/kleister-go"
       ],
       "semanticCommitType": "deps",
       "semanticCommitScope": "patch",

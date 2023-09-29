@@ -8,7 +8,7 @@ terraform {
   required_providers {
     cloudflare = {
       source  = "integrations/github"
-      version = "~> 5.38.0"
+      version = "~> 5.39.0"
     }
   }
 

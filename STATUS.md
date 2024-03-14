@@ -21,6 +21,9 @@
 ## kleister-go
 [![flake build](https://github.com/kleister/kleister-go/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/kleister-go/actions/workflows/flake.yml) [![general build](https://github.com/kleister/kleister-go/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-go/actions/workflows/general.yml) [![release build](https://github.com/kleister/kleister-go/actions/workflows/release.yml/badge.svg)](https://github.com/kleister/kleister-go/actions/workflows/release.yml)
 
+## kleister-infra
+[![general build](https://github.com/kleister/kleister-infra/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-infra/actions/workflows/general.yml)
+
 ## kleister-ios
 [![changes build](https://github.com/kleister/kleister-ios/actions/workflows/changes.yml/badge.svg)](https://github.com/kleister/kleister-ios/actions/workflows/changes.yml) [![general build](https://github.com/kleister/kleister-ios/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-ios/actions/workflows/general.yml)
 

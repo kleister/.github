@@ -42,7 +42,7 @@
     {
       "description": "Automerge untagged golang libs",
       "groupName": "untagged libraries",
-      "matchPackageNames": [
+      "matchDepNames": [
         "golang.org/x/crypto",
         "golang.org/x/net",
         "github.com/kleister/kleister-go"

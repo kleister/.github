@@ -1,7 +1,7 @@
 # Status
 
 ## homebrew-kleister
-[![general build](https://github.com/kleister/homebrew-kleister/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/homebrew-kleister/actions/workflows/general.yml)
+[![automerge build](https://github.com/kleister/homebrew-kleister/actions/workflows/automerge.yml/badge.svg)](https://github.com/kleister/homebrew-kleister/actions/workflows/automerge.yml) [![flake build](https://github.com/kleister/homebrew-kleister/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/homebrew-kleister/actions/workflows/flake.yml) [![general build](https://github.com/kleister/homebrew-kleister/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/homebrew-kleister/actions/workflows/general.yml)
 
 ## kleister-android
 [![changes build](https://github.com/kleister/kleister-android/actions/workflows/changes.yml/badge.svg)](https://github.com/kleister/kleister-android/actions/workflows/changes.yml) [![general build](https://github.com/kleister/kleister-android/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-android/actions/workflows/general.yml)
@@ -16,13 +16,13 @@
 [![changes build](https://github.com/kleister/kleister-desktop/actions/workflows/changes.yml/badge.svg)](https://github.com/kleister/kleister-desktop/actions/workflows/changes.yml) [![general build](https://github.com/kleister/kleister-desktop/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-desktop/actions/workflows/general.yml)
 
 ## kleister-docs
-[![general build](https://github.com/kleister/kleister-docs/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-docs/actions/workflows/general.yml)
+[![automerge build](https://github.com/kleister/kleister-docs/actions/workflows/automerge.yml/badge.svg)](https://github.com/kleister/kleister-docs/actions/workflows/automerge.yml) [![flake build](https://github.com/kleister/kleister-docs/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/kleister-docs/actions/workflows/flake.yml) [![general build](https://github.com/kleister/kleister-docs/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-docs/actions/workflows/general.yml)
 
 ## kleister-go
 [![flake build](https://github.com/kleister/kleister-go/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/kleister-go/actions/workflows/flake.yml) [![general build](https://github.com/kleister/kleister-go/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-go/actions/workflows/general.yml) [![release build](https://github.com/kleister/kleister-go/actions/workflows/release.yml/badge.svg)](https://github.com/kleister/kleister-go/actions/workflows/release.yml)
 
 ## kleister-infra
-[![general build](https://github.com/kleister/kleister-infra/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-infra/actions/workflows/general.yml)
+[![automerge build](https://github.com/kleister/kleister-infra/actions/workflows/automerge.yml/badge.svg)](https://github.com/kleister/kleister-infra/actions/workflows/automerge.yml) [![flake build](https://github.com/kleister/kleister-infra/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/kleister-infra/actions/workflows/flake.yml) [![general build](https://github.com/kleister/kleister-infra/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-infra/actions/workflows/general.yml)
 
 ## kleister-ios
 [![changes build](https://github.com/kleister/kleister-ios/actions/workflows/changes.yml/badge.svg)](https://github.com/kleister/kleister-ios/actions/workflows/changes.yml) [![general build](https://github.com/kleister/kleister-ios/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/kleister-ios/actions/workflows/general.yml)

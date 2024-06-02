@@ -38,11 +38,9 @@
     },
     {
       "description": "Automerge untagged golang libs",
-      "groupName": "untagged libraries",
-      "matchDepNames": [
+      "matchPackageNames": [
         "golang.org/x/crypto",
-        "golang.org/x/net",
-        "github.com/kleister/kleister-go"
+        "golang.org/x/net"
       ],
       "semanticCommitType": "patch",
       "semanticCommitScope": "deps",

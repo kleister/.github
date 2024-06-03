@@ -38,7 +38,7 @@
     },
     {
       "description": "Automerge untagged golang libs",
-      "matchPackageNames": [
+      "matchDepNames": [
         "golang.org/x/crypto",
         "golang.org/x/net"
       ],

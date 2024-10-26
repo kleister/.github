@@ -16,10 +16,10 @@ Octokit::Client.new(
   end.reject do |row|
     row.archived?
   end.map do |row|
-    workflows = client.contents(row.full_name, path: '.github/workflows', query: { ref: 'master' }).reject do |workflow|
-      workflow.name.start_with? 'automerge'
-    end.map do |w|
+    workflows = client.contents(row.full_name, path: '.github/workflows', query: { ref: 'master' }).map do |w|
       w.name.delete_suffix('.yml')
+    end.delete_if do |r|
+      ["automerge"].include? r
     end
 
     {

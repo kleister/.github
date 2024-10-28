@@ -1,5 +1,14 @@
 # Status
 
+## go-forge
+[![flake build](https://github.com/kleister/go-forge/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/go-forge/actions/workflows/flake.yml) [![general build](https://github.com/kleister/go-forge/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-forge/actions/workflows/general.yml) [![release build](https://github.com/kleister/go-forge/actions/workflows/release.yml/badge.svg)](https://github.com/kleister/go-forge/actions/workflows/release.yml)
+
+## go-mcupdater
+[![flake build](https://github.com/kleister/go-mcupdater/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/go-mcupdater/actions/workflows/flake.yml) [![general build](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml) [![release build](https://github.com/kleister/go-mcupdater/actions/workflows/release.yml/badge.svg)](https://github.com/kleister/go-mcupdater/actions/workflows/release.yml)
+
+## go-minecraft
+[![flake build](https://github.com/kleister/go-minecraft/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/go-minecraft/actions/workflows/flake.yml) [![general build](https://github.com/kleister/go-minecraft/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-minecraft/actions/workflows/general.yml) [![release build](https://github.com/kleister/go-minecraft/actions/workflows/release.yml/badge.svg)](https://github.com/kleister/go-minecraft/actions/workflows/release.yml)
+
 ## homebrew-kleister
 [![flake build](https://github.com/kleister/homebrew-kleister/actions/workflows/flake.yml/badge.svg)](https://github.com/kleister/homebrew-kleister/actions/workflows/flake.yml) [![general build](https://github.com/kleister/homebrew-kleister/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/homebrew-kleister/actions/workflows/general.yml)
 

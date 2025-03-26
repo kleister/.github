@@ -1,7 +1,7 @@
 ---
 repository:
   name: .github
-  description: "Kleister: GitHub"
+  description: GitHub org settings for Kleister
   homepage: https://kleister.eu
   topics: kleister, minecraft, github, scripting, profile
 

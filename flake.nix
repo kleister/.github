@@ -85,6 +85,7 @@
 
                 packages = with pkgs; [
                   _1password-cli
+                  cosign
                   nixfmt-rfc-style
                 ];
               };

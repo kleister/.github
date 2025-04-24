@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 gem 'faraday-retry', '~> 2.2'
-gem 'octokit', '~> 9.0'
+gem 'octokit', '~> 10.0'
 
 group :development, :test do
   gem 'rake', '~> 13.0'

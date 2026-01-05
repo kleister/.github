@@ -9,15 +9,15 @@ Octokit.configure do |c|
 end
 
 Octokit::Client.new(
-  access_token: ENV['GITHUB_TOKEN']
+  access_token: ENV.fetch('GITHUB_TOKEN', nil)
 ).tap do |client|
   @repos = client.org_repos('kleister').sort_by(&:name).reject do |row|
-    [".github"].include? row.name or row.archived?
+    ['.github'].include? row.name or row.archived?
   end.map do |row|
     workflows = client.contents(row.full_name, path: '.github/workflows', query: { ref: 'master' }).map do |w|
       w.name.delete_suffix('.yml')
     end.delete_if do |r|
-      ["automerge"].include? r
+      ['automerge'].include? r
     end
 
     {

@@ -79,7 +79,7 @@
                   };
                   ruby = {
                     enable = true;
-                    package = pkgs.ruby_3_4;
+                    package = pkgs.ruby_4_0;
                   };
                 };
 

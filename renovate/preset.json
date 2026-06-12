@@ -81,7 +81,8 @@
       "semanticCommitType": "patch",
       "semanticCommitScope": "deps",
       "pinDigests": true,
-      "automerge": true
+      "automerge": true,
+      "recreateWhen": "always"
     },
     {
       "description": "Build tool version upgrades",

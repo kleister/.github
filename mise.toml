@@ -1,0 +1,13 @@
+#:schema https://mise.jdx.dev/schema/mise.json
+
+[tools]
+1password = "2.38.1"
+node = "24"
+pipx = "1.16.6"
+pre-commit = "4.6.1"
+ruby = "4.0.6"
+terraform = "1.15.8"
+tflint = "0.64.0"
+
+[settings.ruby]
+compile = false

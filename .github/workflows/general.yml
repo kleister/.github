@@ -24,10 +24,11 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v7
 
-      - name: Setup ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
+      - name: Install tools
+        uses: jdx/mise-action@v4
+
+      - name: Install deps
+        run: bundle install
 
       - name: Execute script
         env:
@@ -41,34 +42,32 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v7
 
-      - name: Setup terraform
-        uses: hashicorp/setup-terraform@v4
-        with:
-          terraform_version: latest
+      - name: Install tools
+        uses: jdx/mise-action@v4
 
       - name: Terraform format
-        run: bin/terraform fmt -no-color -check
+        run: terraform -chdir=terraform/ fmt -no-color -check
 
       - name: Terraform init
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_ACCESS_TOKEN }}
           AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: bin/terraform init -no-color -input=false
+        run: terraform -chdir=terraform/ init -no-color -input=false
 
       - name: Terraform validate
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_ACCESS_TOKEN }}
           AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: bin/terraform validate -no-color
+        run: terraform -chdir=terraform/ validate -no-color
 
       - name: Terraform plan
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_ACCESS_TOKEN }}
           AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: bin/terraform plan -no-color -input=false
+        run: terraform -chdir=terraform/ plan -no-color -input=false
 
       - name: Terraform apply
         env:
@@ -76,6 +75,6 @@ jobs:
           AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: bin/terraform apply -no-color -input=false -auto-approve
+        run: terraform -chdir=terraform/ apply -no-color -input=false -auto-approve
 
 ...

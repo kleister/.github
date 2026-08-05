@@ -15,11 +15,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup nodejs
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+
       - name: Generate token
         id: token
         uses: actions/create-github-app-token@v3
         with:
-          app-id: ${{ secrets.TOKEN_EXCHANGE_APP }}
+          client-id: ${{ secrets.TOKEN_EXCHANGE_APP }}
           private-key: ${{ secrets.TOKEN_EXCHANGE_KEY }}
           permission-contents: write
 
@@ -28,13 +33,14 @@ jobs:
         with:
           token: ${{ steps.token.outputs.token }}
 
-      - name: Setup ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
+      - name: Install tools
+        uses: jdx/mise-action@v4
 
       - name: Write date
         run: date >| .github/STATUS
+
+      - name: Install deps
+        run: bundle install
 
       - name: Execute script
         env:

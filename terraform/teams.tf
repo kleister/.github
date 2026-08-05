@@ -6,8 +6,8 @@ resource "github_team" "general" {
 }
 
 resource "github_team_members" "general" {
-  for_each = { for row in var.teams : row.name => row }
-  team_id  = github_team.general[each.value.name].id
+  for_each  = { for row in var.teams : row.name => row }
+  team_slug = github_team.general[each.value.name].slug
 
   dynamic "members" {
     for_each = each.value.members

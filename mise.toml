@@ -1,7 +1,7 @@
 #:schema https://mise.jdx.dev/schema/mise.json
 
 [tools]
-1password = "2.38.1"
+1password = "latest"
 node = "24"
 pipx = "1.16.6"
 pre-commit = "4.6.1"

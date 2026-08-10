@@ -4,7 +4,7 @@
 1password = "latest"
 node = "24"
 pipx = "1.16.6"
-pre-commit = "4.6.1"
+pre-commit = "4.6.2"
 ruby = "4.0.6"
 terraform = "1.15.8"
 tflint = "0.64.0"

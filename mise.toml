@@ -3,7 +3,7 @@
 [tools]
 1password = "latest"
 node = "24"
-pipx = "1.16.6"
+pipx = "1.16.7"
 pre-commit = "4.6.2"
 ruby = "4.0.6"
 terraform = "1.15.8"

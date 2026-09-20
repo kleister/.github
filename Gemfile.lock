@@ -52,7 +52,7 @@ GEM
       faraday (>= 0.17.3, < 3)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
-    unicode-emoji (4.2.0)
+    unicode-emoji (4.3.0)
     uri (1.1.1)
 
 PLATFORMS

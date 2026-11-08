@@ -6,7 +6,7 @@ node = "26"
 prek = "0.5.10"
 ruby = "4.0.6"
 terraform = "1.17.1"
-tflint = "0.65.0"
+tflint = "0.66.0"
 
 [settings.ruby]
 compile = false
